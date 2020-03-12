@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+}
+
+#input {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 10vh;
+    width: 90vw;
+    height: 20vh;
+}
