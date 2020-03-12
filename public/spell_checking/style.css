@@ -9,3 +9,13 @@ body {
     width: 90vw;
     height: 20vh;
 }
+
+#words {
+    margin-left: 35vw;
+    float: left;
+}
+
+#notWords {
+    margin-left: 20vw;
+    float: left;
+}
