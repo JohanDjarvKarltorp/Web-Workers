@@ -2,6 +2,7 @@ let dictionary = [];
 let notWordArray = [];
 let correctWordArray = [];
 let existedWordObject = {};
+let worker = new Worker('worker.js');
 
 fetch('http://localhost:8080/spell_checking/words.txt')
     .then((response) => {
@@ -25,19 +26,8 @@ const checkWords = () => {
 
         if (oldLength < words.length) {
             for (let i = 0; i < words.length; i++) {
-                if (!existInDictionary(words[i])) {
-                    if (!alreadyExist(words[i], notWordArray)) {
-                        addNotWord(words[i]);
-                    } else {
-                        updateCounters(words[i]);
-                    }
-                } else if (!alreadyExist(words[i], correctWordArray)) {
-                    addCorrectWord(words[i]);
-                } else {
-                    updateCounters(words[i]);
-                }
+                existInDictionary(words[i]);
             }
-
             resetCounters();
 
         } else if (oldLength > words.length) {
@@ -47,9 +37,25 @@ const checkWords = () => {
 }
 
 const existInDictionary = (word) => {
-    sleep();
-    let result = dictionary.find(element => element == word);
-    return result != undefined;
+    let btn = document.getElementById('workers');
+    if (btn.checked) {
+        worker.postMessage({ word: word });
+        worker.onmessage = (e) => {
+            if (e.data.result) {
+                addCorrectWord(word);
+            } else {
+                addNotWord(word);
+            }
+        }
+    } else {
+        sleep();
+        let result = dictionary.find(element => element == word);
+        if (result != undefined) {
+            addCorrectWord(word);
+        } else {
+            addNotWord(word);
+        }
+    }
 }
 
 const alreadyExist = (word, array) => {
@@ -69,26 +75,34 @@ const resetCounters = () => {
     }
 }
 
-const addNotWord = (words) => {
-    let notWord = document.getElementById('notWords');
-    let element = document.createElement("p");
+const addNotWord = (word) => {
+    if (!alreadyExist(word, notWordArray)) {
+        let notWord = document.getElementById('notWords');
+        let element = document.createElement("p");
 
-    element.innerHTML = words;
-    element.id = words;
+        element.innerHTML = word;
+        element.id = word;
 
-    notWordArray.push(words);
-    notWord.append(element);
+        notWordArray.push(word);
+        notWord.append(element);
+    } else {
+        updateCounters(word);
+    }
 }
 
 const addCorrectWord = (word) => {
-    let correctWord = document.getElementById('words');
-    let element = document.createElement("p");
+    if (!alreadyExist(word, correctWordArray)) {
+        let correctWord = document.getElementById('words');
+        let element = document.createElement("p");
 
-    element.innerHTML = word;
-    element.id = word;
+        element.innerHTML = word;
+        element.id = word;
 
-    correctWordArray.push(word);
-    correctWord.append(element);
+        correctWordArray.push(word);
+        correctWord.append(element);
+    } else {
+        updateCounters(word);
+    }
 }
 
 const updateCounters = (word) => {

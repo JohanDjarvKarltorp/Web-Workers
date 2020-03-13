@@ -10,6 +10,10 @@ body {
     height: 20vh;
 }
 
+#workers {
+    margin-left: 5vw;
+}
+
 #words {
     margin-left: 35vw;
     float: left;
