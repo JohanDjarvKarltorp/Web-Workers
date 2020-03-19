@@ -3,11 +3,12 @@ PA1445 Bachelor’s Thesis in Software Engineering
 
 # Docker
 ### To only view
-- `docker build -t my-apache2 .`
-- `docker run -p 8080:80 my-apache2`
-- visit [localhost:8080](http://localhost:8080)
+- `docker run -p 8080:80 johandjarvkarltorp/web-workers`
+- Visit [localhost:8080](http://localhost:8080)
 
 ### To edit content inside container with a volume
-- `docker build -t my-apache2 .`
-- `docker run -p 8080:80 -v /absolute/path/to/public/:/usr/local/apache2/htdocs/ my-apache2`
-- visit [localhost:8080](http://localhost:8080)
+- `git clone git@github.com:JohanDjarvKarltorp/Web-Workers.git`
+- `cd Web-Workers/`
+- `docker-compose up`
+- Visit [localhost:8080](http://localhost:8080)
+- Edit files and reload page to see changes
