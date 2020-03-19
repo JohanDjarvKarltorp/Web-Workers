@@ -11,11 +11,10 @@ fetch('http://localhost:8080/spell_checking/words.txt')
 
 onmessage = function(e) {
     let word = e.data.word;
-    console.log(word);
     sleep();
     let result = dictionary.find(element => element == word);
 
-    postMessage({ result: result != undefined });
+    postMessage({ result: result != undefined, word: word });
 }
 
 const sleep = () => {

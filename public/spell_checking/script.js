@@ -40,13 +40,15 @@ const existInDictionary = (word) => {
     let btn = document.getElementById('workers');
     if (btn.checked) {
         worker.postMessage({ word: word });
+
         worker.onmessage = (e) => {
             if (e.data.result) {
-                addCorrectWord(word);
+                addCorrectWord(e.data.word);
             } else {
-                addNotWord(word);
+                addNotWord(e.data.word);
             }
         }
+
     } else {
         sleep();
         let result = dictionary.find(element => element == word);
@@ -112,6 +114,6 @@ const updateCounters = (word) => {
         let element = document.getElementById(word);
         existedWordObject[word].counter++;
         if (existedWordObject[word].counter - 1 != 0)
-            element.innerHTML = `${word} ${existedWordObject[word].counter - 1}`;
+            element.innerHTML = `${word} ${existedWordObject[word].counter}`;
     }
 }
