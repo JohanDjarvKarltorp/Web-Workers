@@ -37,7 +37,7 @@ const checkWords = () => {
 }
 
 const existInDictionary = (word) => {
-    let btn = document.getElementById('workers');
+    let btn = document.getElementById('workerBtn');
     if (btn.checked) {
         worker.postMessage({ word: word });
 
