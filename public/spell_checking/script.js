@@ -79,14 +79,14 @@ const resetCounters = () => {
 
 const addNotWord = (word) => {
     if (!alreadyExist(word, notWordArray)) {
-        let notWord = document.getElementById('notWords');
+        let container = document.getElementById('notWords').children[1];;
         let element = document.createElement("p");
 
         element.innerHTML = word;
         element.id = word;
 
         notWordArray.push(word);
-        notWord.append(element);
+        container.append(element);
     } else {
         updateCounters(word);
     }
@@ -94,14 +94,14 @@ const addNotWord = (word) => {
 
 const addCorrectWord = (word) => {
     if (!alreadyExist(word, correctWordArray)) {
-        let correctWord = document.getElementById('words');
+        let container = document.getElementById('words').children[1];
         let element = document.createElement("p");
 
-        element.innerHTML = word;
+        element.innerHTML = `${word}`;
         element.id = word;
 
         correctWordArray.push(word);
-        correctWord.append(element);
+        container.append(element);
     } else {
         updateCounters(word);
     }

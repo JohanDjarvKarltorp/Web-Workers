@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
 #input {
@@ -15,11 +16,30 @@ body {
 }
 
 #words {
-    margin-left: 35vw;
+    position: absolute;
+    top: 35vh;
+    left: 20vw;
     float: left;
 }
 
 #notWords {
-    margin-left: 20vw;
+    position: absolute;
+    top: 35vh;
+    left: 60vw;
     float: left;
+    height: 60vh;
+    width: 30vw;
+}
+
+.container {
+    height: 50vh;
+    width: 30vw;
+    display: flex;
+    flex-flow: column wrap;
+    overflow: auto;
+}
+
+p {
+    position: relative;
+    width: 100px;
 }
