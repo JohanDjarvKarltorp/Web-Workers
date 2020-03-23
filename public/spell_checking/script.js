@@ -86,7 +86,7 @@ const addNotWord = (word) => {
         element.id = word;
 
         notWordArray.push(word);
-        container.append(element);
+        container.prepend(element);
     } else {
         updateCounters(word);
     }
@@ -101,7 +101,7 @@ const addCorrectWord = (word) => {
         element.id = word;
 
         correctWordArray.push(word);
-        container.append(element);
+        container.prepend(element);
     } else {
         updateCounters(word);
     }
