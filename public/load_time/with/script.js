@@ -29,3 +29,13 @@ let fetchTheBible = () => {
 
 fetchTheBible();
 intensiveWorkLoadWithWorker();
+
+window.onload = () => {
+    performance.measure('this');
+
+    let duration = performance.getEntriesByType('measure')[0].duration;
+
+    let p = document.createElement("p");
+    p.innerHTML = `window.onload is ready after: ${duration} ms`;
+    document.body.prepend(p);
+}

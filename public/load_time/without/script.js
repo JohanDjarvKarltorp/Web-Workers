@@ -26,4 +26,15 @@ let fetchTheBible = () => {
 fetchTheBible();
 intensiveWorkLoad();
 
-window.onload = () => document.body.prepend(p);
+window.onload = () => {
+
+    document.body.prepend(p);
+
+    performance.measure('this');
+
+    let duration = performance.getEntriesByType('measure')[0].duration;
+
+    let time = document.createElement("p");
+    time.innerHTML = `window.onload is ready after: ${duration} ms`;
+    document.body.prepend(time);
+}
