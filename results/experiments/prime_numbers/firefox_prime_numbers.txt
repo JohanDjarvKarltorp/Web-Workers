@@ -1,0 +1,90 @@
+test size 	0 workers 	1 worker 	2 workers 	4 workers 	8 workers 	16 workers
+10,000 	22 ms 	47 ms 	26 ms 	26 ms 	33 ms 	50 ms
+20,000 	76 ms 	99 ms 	62 ms 	56 ms 	44 ms 	67 ms
+40,000 	281 ms 	296 ms 	204 ms 	161 ms 	138 ms 	126 ms
+80,000 	1048 ms 	1061 ms 	869 ms 	505 ms 	346 ms 	361 ms
+160,000 	3840 ms 	3851 ms 	3157 ms 	1831 ms 	1207 ms 	1279 ms
+320,000 	14037 ms 	14092 ms 	11629 ms 	7283 ms 	6224 ms 	5657 ms
+640,000 	60295 ms 	52591 ms 	40413 ms 	30559 ms 	23663 ms 	21280 ms
+1,280,000 	231637 ms 	199219 ms 	154411 ms 	107472 ms 	91174 ms 	79900 ms
+test size 	0 workers 	1 worker 	2 workers 	4 workers 	8 workers 	16 workers
+10,000 	21 ms 	52 ms 	26 ms 	31 ms 	32 ms 	50 ms
+20,000 	76 ms 	87 ms 	71 ms 	52 ms 	58 ms 	62 ms
+40,000 	280 ms 	300 ms 	203 ms 	124 ms 	132 ms 	123 ms
+80,000 	1038 ms 	1065 ms 	868 ms 	498 ms 	374 ms 	352 ms
+160,000 	3679 ms 	3880 ms 	3154 ms 	1850 ms 	1243 ms 	1158 ms
+320,000 	13739 ms 	13872 ms 	11817 ms 	7056 ms 	5749 ms 	5554 ms
+640,000 	57913 ms 	52590 ms 	40578 ms 	29670 ms 	22078 ms 	20902 ms
+1,280,000 	198789 ms 	199088 ms 	157649 ms 	111983 ms 	82169 ms 	80129 ms
+test size 	0 workers 	1 worker 	2 workers 	4 workers 	8 workers 	16 workers
+10,000 	21 ms 	48 ms 	26 ms 	25 ms 	33 ms 	46 ms
+20,000 	77 ms 	90 ms 	65 ms 	56 ms 	50 ms 	66 ms
+40,000 	282 ms 	301 ms 	204 ms 	160 ms 	112 ms 	126 ms
+80,000 	1050 ms 	1064 ms 	846 ms 	548 ms 	397 ms 	355 ms
+160,000 	3705 ms 	3879 ms 	3165 ms 	1852 ms 	1253 ms 	1113 ms
+320,000 	14028 ms 	14018 ms 	11363 ms 	7218 ms 	6651 ms 	5602 ms
+640,000 	52520 ms 	52701 ms 	40434 ms 	30546 ms 	24210 ms 	20942 ms
+1,280,000 	198269 ms 	199056 ms 	157458 ms 	111755 ms 	85398 ms 	81478 ms
+test size 	0 workers 	1 worker 	2 workers 	4 workers 	8 workers 	16 workers
+10,000 	22 ms 	63 ms 	27 ms 	27 ms 	31 ms 	50 ms
+20,000 	76 ms 	92 ms 	68 ms 	43 ms 	47 ms 	62 ms
+40,000 	282 ms 	305 ms 	203 ms 	124 ms 	119 ms 	123 ms
+80,000 	1043 ms 	1059 ms 	850 ms 	494 ms 	365 ms 	349 ms
+160,000 	3673 ms 	3868 ms 	3150 ms 	1830 ms 	1213 ms 	1199 ms
+320,000 	13831 ms 	14039 ms 	11338 ms 	7201 ms 	6329 ms 	5798 ms
+640,000 	58107 ms 	52512 ms 	40371 ms 	30643 ms 	23797 ms 	21104 ms
+1,280,000 	198978 ms 	199311 ms 	157587 ms 	112134 ms 	87840 ms 	81560 ms
+test size 	0 workers 	1 worker 	2 workers 	4 workers 	8 workers 	16 workers
+10,000 	23 ms 	50 ms 	33 ms 	28 ms 	28 ms 	45 ms
+20,000 	76 ms 	92 ms 	66 ms 	44 ms 	63 ms 	68 ms
+40,000 	281 ms 	302 ms 	203 ms 	145 ms 	117 ms 	132 ms
+80,000 	1046 ms 	1058 ms 	896 ms 	494 ms 	383 ms 	343 ms
+160,000 	3668 ms 	3831 ms 	3152 ms 	1833 ms 	1230 ms 	1164 ms
+320,000 	13805 ms 	13998 ms 	11386 ms 	7167 ms 	6524 ms 	5681 ms
+640,000 	60609 ms 	52640 ms 	40408 ms 	30576 ms 	22840 ms 	20905 ms
+1,280,000 	198250 ms 	199169 ms 	153836 ms 	106480 ms 	91850 ms 	79182 ms
+test size 	0 workers 	1 worker 	2 workers 	4 workers 	8 workers 	16 workers
+10,000 	23 ms 	42 ms 	27 ms 	21 ms 	33 ms 	46 ms
+20,000 	76 ms 	93 ms 	67 ms 	56 ms 	70 ms 	64 ms
+40,000 	280 ms 	302 ms 	204 ms 	125 ms 	122 ms 	127 ms
+80,000 	1050 ms 	1057 ms 	897 ms 	494 ms 	410 ms 	353 ms
+160,000 	3649 ms 	3857 ms 	3178 ms 	1833 ms 	1243 ms 	1181 ms
+320,000 	13834 ms 	14029 ms 	11583 ms 	7219 ms 	6174 ms 	5620 ms
+640,000 	52261 ms 	52566 ms 	40233 ms 	29617 ms 	24458 ms 	21053 ms
+1,280,000 	214687 ms 	199323 ms 	154419 ms 	111784 ms 	90800 ms 	80218 ms
+test size 	0 workers 	1 worker 	2 workers 	4 workers 	8 workers 	16 workers
+10,000 	21 ms 	40 ms 	34 ms 	23 ms 	30 ms 	47 ms
+20,000 	75 ms 	87 ms 	66 ms 	58 ms 	69 ms 	69 ms
+40,000 	282 ms 	294 ms 	201 ms 	170 ms 	108 ms 	123 ms
+80,000 	1045 ms 	1067 ms 	898 ms 	520 ms 	360 ms 	361 ms
+160,000 	3654 ms 	3835 ms 	3157 ms 	1823 ms 	1224 ms 	1153 ms
+320,000 	13891 ms 	13964 ms 	12022 ms 	7192 ms 	6355 ms 	5561 ms
+640,000 	60445 ms 	52319 ms 	40207 ms 	29529 ms 	23556 ms 	20971 ms
+1,280,000 	198527 ms 	198736 ms 	153917 ms 	106783 ms 	88738 ms 	78622 ms
+test size 	0 workers 	1 worker 	2 workers 	4 workers 	8 workers 	16 workers
+10,000 	23 ms 	43 ms 	29 ms 	24 ms 	34 ms 	50 ms
+20,000 	76 ms 	87 ms 	64 ms 	48 ms 	80 ms 	64 ms
+40,000 	282 ms 	293 ms 	205 ms 	158 ms 	103 ms 	121 ms
+80,000 	1035 ms 	1073 ms 	895 ms 	539 ms 	385 ms 	358 ms
+160,000 	3672 ms 	3856 ms 	3181 ms 	1833 ms 	1224 ms 	1083 ms
+320,000 	13836 ms 	14042 ms 	11876 ms 	7195 ms 	5976 ms 	5757 ms
+640,000 	52219 ms 	52485 ms 	40202 ms 	30321 ms 	21800 ms 	21643 ms
+1,280,000 	215485 ms 	199427 ms 	157459 ms 	106918 ms 	83582 ms 	80085 ms
+test size 	0 workers 	1 worker 	2 workers 	4 workers 	8 workers 	16 workers
+10,000 	21 ms 	46 ms 	26 ms 	22 ms 	31 ms 	47 ms
+20,000 	77 ms 	86 ms 	67 ms 	66 ms 	44 ms 	65 ms
+40,000 	280 ms 	308 ms 	220 ms 	142 ms 	126 ms 	128 ms
+80,000 	1046 ms 	1056 ms 	889 ms 	492 ms 	407 ms 	367 ms
+160,000 	3663 ms 	3824 ms 	3152 ms 	1849 ms 	1257 ms 	1110 ms
+320,000 	13899 ms 	14007 ms 	11637 ms 	7217 ms 	6312 ms 	5626 ms
+640,000 	52490 ms 	52614 ms 	40281 ms 	29465 ms 	24191 ms 	20640 ms
+1,280,000 	214156 ms 	199176 ms 	153637 ms 	112034 ms 	86324 ms 	79375 ms
+test size 	0 workers 	1 worker 	2 workers 	4 workers 	8 workers 	16 workers
+10,000 	23 ms 	46 ms 	30 ms 	23 ms 	28 ms 	50 ms
+20,000 	76 ms 	87 ms 	65 ms 	67 ms 	43 ms 	68 ms
+40,000 	278 ms 	311 ms 	203 ms 	143 ms 	104 ms 	128 ms
+80,000 	1047 ms 	1062 ms 	898 ms 	530 ms 	355 ms 	338 ms
+160,000 	3643 ms 	3830 ms 	3161 ms 	1826 ms 	1247 ms 	1475 ms
+320,000 	13884 ms 	14017 ms 	11690 ms 	7305 ms 	6328 ms 	5536 ms
+640,000 	52507 ms 	52411 ms 	40341 ms 	30466 ms 	23941 ms 	21046 ms
+1,280,000 	215331 ms 	199021 ms 	153855 ms 	111734 ms 	82773 ms 	80546 ms
